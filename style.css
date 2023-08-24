@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=Montserrat:wght@600&family=Open+Sans:wght@600&display=swap');
+
+
+body{
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-image: radial-gradient(#570e6d, #3d0a9b);
+}
+
+.wrapper{
+    width: 90vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px;
+    position: relative;
+    top: 50px;
+}
+
+#content{
+    position: relative;
+    top: 100px;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #3d0a9b;
+    background-color: #c9c1c1;
+}
+
+.Add{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #570e6d;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+@media screen and (min-width: 600px)
+{
+    .Add:hover{
+        background-color: #3a0749;
+    }
+}
