@@ -61,6 +61,7 @@ window.onclick = e =>
 function ClearList()
 {
     contentDiv.innerHTML = "";
+    SaveData();
 }
 
 function SaveData()
