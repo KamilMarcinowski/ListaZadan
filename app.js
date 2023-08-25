@@ -9,7 +9,7 @@ function Add()
     if (textToAdd.value != "")
     {
         const template = document.createElement("div");
-        template.style.width = "400px";
+        template.style.width = "300px";
         template.style.height = "50px";
         template.style.backgroundColor = "white";
         template.style.borderRadius = "15px";
@@ -31,8 +31,7 @@ function Add()
         deleteBtn.style.left = "-15px";
         deleteBtn.style.backgroundColor = "red";
         deleteBtn.style.border = "none";
-
-        deleteBtn.addEventListener("click", DeleteElement);
+        deleteBtn.className = "deleteBtn";
 
         template.appendChild(title);
         template.appendChild(deleteBtn);
@@ -43,14 +42,16 @@ function Add()
     }
 }
 
-function DeleteElement(e)
+window.onclick = e =>
 {
-    window.onclick = e =>
+    if (e.target.className == "deleteBtn")
     {
-        if (e.target.parentElement.className == "element")
-        {
-            e.target.parentElement.remove();
-        }
+        e.target.parentElement.remove();
+    }
+    if (e.target.className == "element")
+    {
+        e.target.style.border = "4px solid green";
+        SaveData();
     }
 }
 
