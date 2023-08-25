@@ -40,6 +40,9 @@ function Add()
         textToAdd.value = "";
         SaveData();
     }
+    else{
+        alert("Unable to add an empty task");
+    }
 }
 
 window.onclick = e =>
